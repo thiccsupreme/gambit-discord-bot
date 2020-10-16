@@ -22,14 +22,6 @@ client.on("ready", async () => {
 
     console.log("Gambit is Online")
 
-    client.user.setPresence({
-        status: "online",
-        game: {
-            name: `.help | Watching ${client.guilds.size} servers.`,
-            type: "PLAYING"
-        }
-    }); // this block of code set's the bot's discord rich presence
-
     client.on("message", async message => {
         const prefix = "$";
 
