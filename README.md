@@ -48,7 +48,7 @@ For a cleaner and easier to manage guide, click [here](https://thiccsupreme.gitb
 * Checking if the bot is up, and how long it has been up. 
 * Information about the author
 #### NSFW
-> Not going to go into detail about this command. Look into the source code if you want to *investigate* these commands ;)
+Not going to go into detail about this command. Look into the source code if you want to *investigate* these commands ;)
 
 
 # Tips / Misc. 
