@@ -7,7 +7,7 @@
     "test": "node .",
     "start": "node ."
   },
-  "author": "",
+  "author": "thiccsupreme",
   "license": "ISC",
   "dependencies": {
     "ascii-art": "^2.5.0",
