@@ -43,6 +43,7 @@ module.exports = {
                     .addField("Instagram Account Information", "`.instagram <username>`")
                     .addField("Invite Count (Top 5)", "`.invites`")
                     .addField("Bot Marketplaces", "`.marketplaces`")
+                    .addField("Quote a User", "`.quote <channel id> <message id>`")
                     .addField("Server Member Count", "`.membercount`")
                     .addField("System Information", "`.sysinfo`")
                     .addField("Ping", "`.ping`")
