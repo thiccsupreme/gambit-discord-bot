@@ -1,0 +1,11 @@
+{
+    "ApiKey": "Twitter_API_KEY",
+    "consumer_key": "TWITTER_CONSUMER_KEY",
+    "consumer_secret": "TWITTER_SECRET_CONSUMER_KEY",
+    "access_token": "TWITTER_ACCESS_TOKEN",
+    "access_token_secret": "TWITTER_SECRET_ACCESS_TOKEN",
+    "guildID": "GUILD_ID",
+    "ownerID": "OWNER_ID",
+    "ccAPIKey": "CRYPTOCOMPARE_API_KEY"
+    
+}
