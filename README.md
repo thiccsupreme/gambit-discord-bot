@@ -12,7 +12,6 @@ For a cleaner and easier to manage guide, click [here](https://thiccsupreme.gitb
 ### Commands
 
 #### Moderation 
-> Moderation is a key part of any discord server, and Gambit is the optimal option to maintain your Discord server.
 * Kick/Ban
 * Mute
 * Channel locking
