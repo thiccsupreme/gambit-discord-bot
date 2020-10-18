@@ -1,11 +1,11 @@
-const Discord = require("discord.js");
+const { RichEmbed } = require("discord.js");
 
 const helplist = "`.helplist`"
 
 module.exports = {
     name: "help",
     run: (client, message) => {
-        const embed0 = new Discord.MessageEmbed()
+        const embed0 = new RichEmbed()
             .setTitle("Prefix: `.`")
             .setAuthor(`Gambit Help Guide`)
             .setColor(0x5126c7)
@@ -31,7 +31,7 @@ module.exports = {
 
             collector.on('collect', () => {
 
-                const embed = new Discord.MessageEmbed()
+                const embed = new RichEmbed()
                     .setColor(0x5126c7)
                     .setAuthor("🎙️ Informational Commands\n\n ")
                     .addField("Catchall Generator", "`.catchall <domain>`")
@@ -43,11 +43,11 @@ module.exports = {
                     .addField("Instagram Account Information", "`.instagram <username>`")
                     .addField("Invite Count (Top 5)", "`.invites`")
                     .addField("Bot Marketplaces", "`.marketplaces`")
-                    .addField("Quote a User", "`.quote <channel id> <message id>`")
                     .addField("Server Member Count", "`.membercount`")
                     .addField("System Information", "`.sysinfo`")
                     .addField("Ping", "`.ping`")
                     .addField("Server Information", "`.serverinfo`")
+                    .addField("Shoe Size Converter", "`.convert <us shoe size 6-13`")
                     .addField("Website Status Checker", "`.status <url>`")
                     .addField("Twitter Account Information", "`.twitter <username>`")
                     .addField("Bot Uptime", "`.uptime`")
@@ -59,7 +59,7 @@ module.exports = {
             const collector1 = m.createReactionCollector(filter1, { max: 9, time: 5 * 60 * 1000 })
 
             collector1.on('collect', () => {
-                const embed1 = new Discord.MessageEmbed()
+                const embed1 = new RichEmbed()
                     .setColor(0x5126c7)
                     .setAuthor("🎉 Fun Commands")
                     .addField("8-Ball", "`.8ball <query>`")
@@ -80,7 +80,7 @@ module.exports = {
 
             collector2.on('collect', () => {
 
-                const embed2 = new Discord.MessageEmbed()
+                const embed2 = new RichEmbed()
                     .setColor(0x5126c7)
                     .setAuthor("📈 Moderation Commands")
                     .addField("**Add Role**", "`.addrole <user> <role>`")
@@ -99,7 +99,7 @@ module.exports = {
             
             collector3.on('collect', () => {
 
-                const embed3 = new Discord.MessageEmbed()
+                const embed3 = new RichEmbed()
                     .setColor(0x5126c7)
                     .setAuthor("🔞 NSFW Commands")
                     .addField("**4K**", "`.4k`", true)
@@ -116,7 +116,7 @@ module.exports = {
             const collector4 = m.createReactionCollector(filter4, { max: 9, time: 5 * 60 * 1000 })
 
             collector4.on('collect', () => {
-                const embed1 = new Discord.MessageEmbed()
+                const embed1 = new RichEmbed()
                     .setColor(0x5126c7)
                     .setAuthor("🚀 Owner Commands")
                     .addField("Eval Command", "`.eval <command>`")
