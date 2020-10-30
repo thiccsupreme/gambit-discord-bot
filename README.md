@@ -22,6 +22,8 @@
 #### Example: 
 ![Mod](https://i.imgur.com/W0GUL2R.png)
 
+___
+
 ### Fun 
 * 8-Ball Command
 * Plaintext to ASCII converter
@@ -37,6 +39,8 @@
 #### Example: 
 
 ![Fun](https://i.imgur.com/mOyxVNM.png)
+
+___
 
 ### Information
 * Catchall Generator.
@@ -58,6 +62,8 @@
 #### Example: 
 
 ![Info](https://i.imgur.com/WRlexJM.png)
+
+___
 
 #### NSFW
 Not going to go into detail about this command. Look into the source code if you want to *investigate* these commands ;)
