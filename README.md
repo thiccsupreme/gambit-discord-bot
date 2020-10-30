@@ -73,6 +73,7 @@ Not going to go into detail about this command. Look into the source code if you
 # Tips / Misc. 
 
  * If you will be downloading this repository, the `package.json` has the script to start the bot as `node .`
+
 ![Package](https://i.imgur.com/MzB95ez.png)
 * Before running the bot, make sure to check the `config.json` file and input all the necessary values. 
 ![Config](https://i.imgur.com/4PatnnP.png)
