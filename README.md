@@ -1,13 +1,8 @@
-
-# Gambit Discord Bot
+![Gambit](https://i.imgur.com/KgyyWbS.png)
 
 ## About
 
-> Gambit was a project I started about 1 year ago (10/20/2019) because I was interested in making a Discord bot for my fnf Discord server. With the help of some proficient developers from sneaker Twitter, and my own previous knowledge of coding, I scraped together a small little project. Formerly known as FlushedBot, Gambit is an all-in-one Discord bot that can help moderate, manage, and bring fun and useful commands to the servers it joins. 
-
-
-![Gambit](https://i.imgur.com/KgyyWbS.png)
-
+> Gambit was a project I started about 1 year ago (10/20/2019) because I was interested in making a Discord bot for my friends and family Discord server. With the help of some proficient developers from sneaker Twitter, and my own previous knowledge of coding, I scraped together a small little project. Formerly known as FlushedBot, Gambit is an all-in-one Discord bot that can help moderate, manage, and bring fun and useful commands to the servers it joins. 
 
 # Commands
 
