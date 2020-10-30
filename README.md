@@ -1,4 +1,3 @@
-
 # Gambit Discord Bot
 
 ## About
