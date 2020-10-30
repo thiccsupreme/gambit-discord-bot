@@ -8,9 +8,9 @@
 
 ![Gambit](https://i.imgur.com/dUHqQjx.png)
 
-### Commands
+## Commands
 
-#### Moderation 
+### Moderation 
 * Kick/Ban
 * Mute
 * Channel locking
@@ -19,9 +19,10 @@
 * Eval command
 * Bot shutdown command
 
+#### Example: 
 ![Mod](https://i.imgur.com/W0GUL2R.png)
 
-#### Fun 
+### Fun 
 * 8-Ball Command
 * Plaintext to ASCII converter
 * Avatar command
@@ -33,9 +34,11 @@
 * Rock Paper Scissors
 * Rating command
 
+#### Example: 
+
 ![Fun](https://i.imgur.com/mOyxVNM.png)
 
-#### Information
+### Information
 * Catchall Generator.
  * Crypto conversion rates to any currency.
 * Finding the conversion rates between cryptocurrencies and regular currencies.
@@ -51,6 +54,8 @@
 * Website status checker
 * Checking if the bot is up, and how long it has been up. 
 * Information about the author
+
+#### Example: 
 
 ![Info](https://i.imgur.com/WRlexJM.png)
 
