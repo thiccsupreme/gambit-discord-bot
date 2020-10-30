@@ -1,3 +1,4 @@
+
 # Gambit Discord Bot
 
 ## About
@@ -17,6 +18,9 @@
 * Add and remove role
 * Eval command
 * Bot shutdown command
+
+![Mod](https://i.imgur.com/W0GUL2R.png)
+
 #### Fun 
 * 8-Ball Command
 * Plaintext to ASCII converter
@@ -28,6 +32,9 @@
 * Diceroll 
 * Rock Paper Scissors
 * Rating command
+
+![Fun](https://i.imgur.com/mOyxVNM.png)
+
 #### Information
 * Catchall Generator.
  * Crypto conversion rates to any currency.
@@ -44,6 +51,9 @@
 * Website status checker
 * Checking if the bot is up, and how long it has been up. 
 * Information about the author
+
+![Info](https://i.imgur.com/WRlexJM.png)
+
 #### NSFW
 Not going to go into detail about this command. Look into the source code if you want to *investigate* these commands ;)
 
@@ -51,7 +61,9 @@ Not going to go into detail about this command. Look into the source code if you
 # Tips / Misc. 
 
 > * If you will be downloading this repository, the `package.json` has the script to start the bot as `node .`
+![Package](https://i.imgur.com/MzB95ez.png)
 >  * Before running the bot, make sure to check the `config.json` file and input all the necessary values. 
+![Config](https://i.imgur.com/4PatnnP.png)
 >  * Not all commands may be fully functional as they may have depreciated code, bad API's, etc. Please open up an issue if anything like that sort happens. 
 >  * Pull requests are appreciated, and would help continue the development of this bot. 
 
