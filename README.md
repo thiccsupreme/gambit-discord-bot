@@ -67,8 +67,7 @@ ___
 ___
 
 ### NSFW
-Not going to go into detail about this command. Look into the source code if you want to *investigate* these commands ;)
-
+😏
 
 # Tips / Misc. 
 
