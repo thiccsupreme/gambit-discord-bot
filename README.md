@@ -9,9 +9,9 @@
 ![Gambit](https://i.imgur.com/dUHqQjx.png)
 
 
-## Commands
+# Commands
 
-## Moderation 
+### Moderation 
 * Kick/Ban
 * Mute
 * Channel locking
@@ -25,7 +25,7 @@
 
 ___
 
-## Fun 
+### Fun 
 * 8-Ball Command
 * Plaintext to ASCII converter
 * Avatar command
@@ -43,7 +43,7 @@ ___
 
 ___
 
-## Information
+### Information
 * Catchall Generator.
  * Crypto conversion rates to any currency.
 * Finding the conversion rates between cryptocurrencies and regular currencies.
@@ -66,7 +66,7 @@ ___
 
 ___
 
-## NSFW
+### NSFW
 Not going to go into detail about this command. Look into the source code if you want to *investigate* these commands ;)
 
 
