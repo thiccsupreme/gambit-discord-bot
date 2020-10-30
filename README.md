@@ -8,6 +8,7 @@
 
 ![Gambit](https://i.imgur.com/dUHqQjx.png)
 
+
 ## Commands
 
 ## Moderation 
