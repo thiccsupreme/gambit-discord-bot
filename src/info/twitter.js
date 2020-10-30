@@ -15,21 +15,25 @@ module.exports = {
         if (args[0]) {
             T.get('/users/show', { screen_name: args[0] }, (err, data, response) => {
                 if (!err) {
+
+                    const fulldate = data.created_at.split(" ");
+
                     const embed = new Discord.MessageEmbed()
                         .setColor(0x1DCAFF)
-                        .setAuthor(data.name, data.profile_image_url)
+                        .setAuthor(data.name, data.profile_image_url, `https://twitter.com/${data.screen_name}`)
                         .setThumbnail(`${data.profile_image_url}`)
                         .addField("**Username:**", `@${data.screen_name}`)
-                        .addField("**Bio:**", data.description.length === 0 ? "N/A" : data.description, true)
-                        .addField("**Location:**", data.location.length === 0 ? "N/A" : data.location, false)
-                        .addField("Protected Account:", data.protected ? "Yes ✅" : "Nope ❌")
-                        .addField("**Date of Creation:**", data.created_at, false)
+                        .addField("**Bio:**", data.description.length === 0 ? "N/A" : data.description,false)
+                        .addField("**Date of Creation:**", `${fulldate[0]} ${fulldate[1]} ${fulldate[2]} ${fulldate[5]}`, false)
+                        .addField("**Location:**", data.location.length === 0 ? "N/A" : data.location, true)
+                        .addField("Protected Account:", data.protected ? "Yes ✅" : "Nope ❌", true)
+                        .addField("Verified Account:", data.verified ? "Yes ✅" : "Nope ❌", true)
                         .addField("**Followers:**", data.followers_count, true)
                         .addField("**Following:**", data.friends_count, true)
+                        .addField("**Tweet Count:**", data.statuses_count, true)
                         .setFooter("Made by @FootlockerRU")
-                        .setThumbnail()
+                        .setTimestamp()
                     message.channel.send(embed);
-                    // console.log(data)
                 } else {
                     const embed1 = new Discord.MessageEmbed()
                         .setColor("RED")
