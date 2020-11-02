@@ -67,9 +67,13 @@ ___
 # Miscellaneous
  
  * To get the bot to function you will need to input a Discord Bot token into the `.env` file. If you don't know how to get this token, click [here](https://youtu.be/j_sD9udZnCk?t=529). 
+ 
  ![Token](https://i.imgur.com/sDZ55oF.png)
+
 * If you will be downloading this repository, the `package.json` has the script to start the bot as `node .`
+
 ![Package](https://i.imgur.com/MzB95ez.png)
+
 * Before running the bot, make sure to check the `config.json` file and input all the necessary values. 
 ![Config](https://i.imgur.com/4PatnnP.png)
 * Not all commands may be fully functional as they may have deprecated code, bad API's, etc. Please open up an issue if any of the commands don't result in the bot responding. 
