@@ -66,7 +66,7 @@ ___
 
 # Miscellaneous
  
- * To get the bot to function you will need to input a Discord Bot token into the `.env` file. If you don't know how to get this token, click [here](https://youtu.be/j_sD9udZnCk?t=529). 
+ * To get the bot to function you will need to input a Discord Bot token into the `.env` file. If you don't know how to get this token, click **[here](https://youtu.be/j_sD9udZnCk?t=529)**. 
  
  ![Token](https://i.imgur.com/sDZ55oF.png)
 
