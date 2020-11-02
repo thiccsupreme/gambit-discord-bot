@@ -21,9 +21,7 @@ module.exports = {
                 })
 
             })
-      
         } else {
-
             fetch(issInfo).then(res => res.json()).then(res => {
 
                 const currentTime = new Date(res.timestamp * 1000).toLocaleString();
