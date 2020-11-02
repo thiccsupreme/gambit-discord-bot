@@ -71,7 +71,7 @@ ___
 ![Package](https://i.imgur.com/MzB95ez.png)
 * Before running the bot, make sure to check the `config.json` file and input all the necessary values. 
 ![Config](https://i.imgur.com/4PatnnP.png)
-* Not all commands may be fully functional as they may have depreciated code, bad API's, etc. Please open up an issue if anything like that sort happens. 
+* Not all commands may be fully functional as they may have deprecated code, bad API's, etc. Please open up an issue if any of the commands don't result in the bot responding. 
 * Pull requests are appreciated, and would help continue the development of this bot. 
 * You can add this bot to your server **[here](https://discord.com/api/oauth2/authorize?client_id=674028761347522569&permissions=8&scope=bot)**. The bot is hosted on Heroku so there will be downtimes as I don't have enough to pay for a server with close to 0 downtime. 
 
