@@ -22,7 +22,6 @@ ___
 
 ### Fun 
 * 8-Ball Command
-* Plaintext to ASCII converter
 * Avatar command
 * Blackjack
 * Calculator
