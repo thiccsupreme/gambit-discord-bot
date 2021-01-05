@@ -17,14 +17,12 @@ module.exports = {
             .addField("**Fun Commands**", "🎉", false)
             .addField("**Moderation Commands**", "📈", false)
             .addField("**NSFW Commands**", "🔞", false)
-            .addField("**Owner Commands**", "🚀", false)
             .setTimestamp()
         message.channel.send(embed0).then(m => {
             m.react("ℹ️")
             m.react("🎉")
             m.react("📈")
             m.react("🔞")
-            m.react("🚀")
 
             const filter = (reaction, user) => reaction.emoji.name === "ℹ️" && user.id === message.author.id;
             const collector = m.createReactionCollector(filter, { max: 9, time: 5 * 60 * 1000 });
@@ -33,26 +31,26 @@ module.exports = {
 
                 const embed = new RichEmbed()
                     .setColor(0x5126c7)
-                    .setAuthor("🎙️ Informational Commands\n\n ")
-                    .addField("Catchall Generator", "`.catchall <domain>`")
-                    .addField("Crypto Converter", "`.crypto <crypto currency> <currency of choice>`")
-                    .addField("Currency Converter", "`.currency <init currency> <amount> <final currency>`")
-                    .addField("Delay Calculator", "`.delaycalc <task number> <proxy count>`")
-                    .addField("Gmail J1g", "`.gmail <your email (must be gmail)>`")
-                    .addField("Fee Calculator", "`.fee <selling price>`")
-                    .addField("Instagram Account Information", "`.instagram <username>`")
-                    .addField("Invite Count (Top 5)", "`.invites`")
-                    .addField("Bot Marketplaces", "`.marketplaces`")
-                    .addField("Server Member Count", "`.membercount`")
-                    .addField("System Information", "`.sysinfo`")
-                    .addField("Ping", "`.ping`")
-                    .addField("Server Information", "`.serverinfo`")
-                    .addField("Shoe Size Converter", "`.convert <us shoe size 6-13`")
-                    .addField("Website Status Checker", "`.status <url>`")
-                    .addField("Twitter Account Information", "`.twitter <username>`")
-                    .addField("Bot Uptime", "`.uptime`")
-                    .addField("WHo Is?", "`.whois`")
-                m.edit(embed)
+                    .addField("**Bot Information**", "`.botinfo`")
+                    .addField("**COVID Stats**", "`.corona <country code>`")
+                    .addField("**Crypto Conversion**", "`.crypto <crypto> <real currency>`")
+                    .addField("**Delay Calculator**", "`.delaycalc <task #> <amount of proxies>`")
+                    .addField("**Gmail Dot Trick**", "`.gmail <your gmail>`")
+                    .addField("**Fee Calculator**", "`.fee <your selling price>s`")
+                    .addField("**Bot Marketplaces**", "`.marketplaces`")
+                    .addField("**Ping**", "`.ping`")
+                    .addField("**Server Information**", "`.serverinfo`")
+                    .addField("**Twitter User Information**", "`.twitter <username>`")
+                    .addField("**Bot Uptime**", "`.uptime`")
+                    .addField("**Who Is?**", "`.whois`")
+                    .addField("**Catchall Generator**", "`.catchall <domain>`")
+                    .addField("**Currency Converter**", "`.convert <initial currency> <amount> <final currency>`")
+                    .addField("**Member Count**", "`.membercount`")
+                    .addField("**Website Status Checker**", "`.status <url>` **(must include `https://` or `http://`)**")
+                    .addField("**Invites Leaderboard (Top 5)**", "`.invites`")
+                m.edit(embed).then(m => {
+                    m.reactions.resolve("ℹ️").users.remove(message.author.id);
+                })
             });
 
             const filter1 = (reaction, user) => reaction.emoji.name === "🎉" && user.id === message.author.id;
@@ -61,18 +59,20 @@ module.exports = {
             collector1.on('collect', () => {
                 const embed1 = new RichEmbed()
                     .setColor(0x5126c7)
-                    .setAuthor("🎉 Fun Commands")
-                    .addField("8-Ball", "`.8ball <query>`")
-                    .addField("Text to ASCII", "`.ascii <text>`")
-                    .addField("Profile Picture Enlarger", "`.av`")
-                    .addField("Blackjack", "`.blackjack`")
-                    .addField("Math Caluclator", "`.calculate <equation>`")
-                    .addField("Cat / Dog Pics", "`.cat / .dog`")
-                    .addField("Flip a Coin", "`.coinflip`")
-                    .addField("Diceroll", "`.dice`")
-                    .addField("Get a Rating", "`.rate <anything>`")
-                    .addField("Rock Paper Scissors", "`.rps`")
-                m.edit(embed1)
+                    .addField("**8Ball**", "`.8ball <your question>`")
+                    .addField("**Text to ASCII**", "`.ascii <text>`")
+                    .addField("**Avatar**", "`.av` or `.av @<user>`")
+                    .addField("**Calculator**", "`.math <your math equation here>`")
+                    .addField("**Cat Pictures**", "`.cat`")
+                    .addField("**Coin Flip**", "`.coinflip`")
+                    .addField("**Dice Roll**", "`.dice`")
+                    .addField("**Dog Pictures**", "`.dog`")
+                    .addField("**Rock Paper Scissors**", "`.rps`")
+                    .addField("**Blackjack**", "`.blackjack`")
+                    .addField("**Rate Anything**", "`.rate <anything>`")
+                m.edit(embed1).then(m => {
+                    m.reactions.resolve("🎉").users.remove(message.author.id);
+                })
             });
             
             const filter2 = (reaction, user) => reaction.emoji.name === "📈" && user.id === message.author.id;
@@ -82,17 +82,19 @@ module.exports = {
 
                 const embed2 = new RichEmbed()
                     .setColor(0x5126c7)
-                    .setAuthor("📈 Moderation Commands")
                     .addField("**Add Role**", "`.addrole <user> <role>`")
                     .addField("**Ban**", "`.ban <user>`")
-                    .addField("**Change Bot Nickname**", "`.setbotnick <new nickname>`")
-                    .addField("**Clear Chat**", "`.clear <number of messages>`")
+                    .addField("**Purge Chat**", "`.clear <number of messages>`")
                     .addField("**Kick**", "`.kick <user>`")
                     .addField("**Mute**", "`.mute <user> <duration (s,m,h,d)`")
                     .addField("**Remove Role**", "`.removerole <user> <role>`")
-                    .addField("Snipe Recently Deleted Message", "`.snipe`")
                     .addField("**Unmute**", "`.unmute <user>`")
-                m.edit(embed2)
+                    .addField("**Change Bot Nickname**", "`.setbotnick <new nickname>`")
+                    .addField("Recently Deleted Message", "`.snipe`")
+                    .addField("Change User Nickname", "`.nickname <@user> <new nickname>`")
+                m.edit(embed2).then(m => {
+                    m.reactions.resolve("📈").users.remove(message.author.id);
+                })
             });
             const filter3 = (reaction, user) => reaction.emoji.name === "🔞" && user.id === message.author.id;
             const collector3 = m.createReactionCollector(filter3, { max: 9, time: 5 * 60 * 1000 });
@@ -101,28 +103,14 @@ module.exports = {
 
                 const embed3 = new RichEmbed()
                     .setColor(0x5126c7)
-                    .setAuthor("🔞 NSFW Commands")
-                    .addField("**4K**", "`.4k`", true)
-                    .addField("**Ass**", "`.ass`", true)
-                    .addField("**Boobs**", "`.boobs`", true)
-                    .addField("**GIF**", "`.nsfwgif`", true)
-                    .addField("**Hentai**", "`.hentai`", true)
-                    .addField("**Pussy**", "`.pussy`", true)
-                    .addField("**Thighs**", "`.thighs`", true)
-                m.edit(embed3)
-            });
+                    .addField("**Ass**", "`.ass`")
+                    .addField("**Boobs**", "`.boobs`")
+                    .addField("**GIF**", "`.nsfwgif`")
+                    .addField("**Pussy**", "`.pussy`")
 
-            const filter4 = (reaction, user) => reaction.emoji.name === "🚀" && user.id === message.author.id;
-            const collector4 = m.createReactionCollector(filter4, { max: 9, time: 5 * 60 * 1000 })
-
-            collector4.on('collect', () => {
-                const embed1 = new RichEmbed()
-                    .setColor(0x5126c7)
-                    .setAuthor("🚀 Owner Commands")
-                    .addField("Eval Command", "`.eval <command>`")
-                    .addField("Mass DM", "`.massdm <content>`")
-                    .addField("Terminate the Bot", "`.shutdown`")
-                m.edit(embed1)
+                m.edit(embed3).then(m => {
+                    m.reactions.resolve("🔞").users.remove(message.author.id);
+                })
             });
         })
     }
