@@ -8,8 +8,8 @@
 # <p align=center> Downloading / Installing Gambit 📂
 
 * Make sure Node.JS is installed on your local machine or server! 
-	* Click [here](https://nodejs.org/en/download/) to install Node if needed. 
-* Install the bot by either clicking [here](https://github.com/thiccsupreme/gambit-discord-bot/archive/main.zip), which will download a zip file with the updated version of the bot, or Git clone the repository. 
+	* Click **[here](https://nodejs.org/en/download/)** to install Node if needed. 
+* Install the bot by either clicking **[here](https://github.com/thiccsupreme/gambit-discord-bot/archive/main.zip)**, which will download a zip file with the updated version of the bot, or Git clone the repository. 
 * To get the bot to function you will need to input a Discord Bot token into the `.env` file. If you don't know how to get this token, click **[here](https://youtu.be/j_sD9udZnCk?t=529)**. 
 
 ![Token](https://i.imgur.com/nNAaMRu.png)
@@ -21,7 +21,7 @@
 
 ![Config](https://i.imgur.com/HlmRAgj.png)
 
-* 
+
 
 # <p align=center>Commands 🎮
 
