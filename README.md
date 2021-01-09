@@ -94,3 +94,4 @@ Currently in the works:
 * Mass Role DM 
 ___
 ###### For any help/concerns, you can reach me on Discord (thiccsupreme#0002) or [click here](https://twitter.com/messages/compose?recipient_id=1053363951747117058) to DM me on Twitter.
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fthiccsupreme)
