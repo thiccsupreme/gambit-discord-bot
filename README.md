@@ -3,7 +3,7 @@
 
 # <p align=center>About ℹ️
 
-> Gambit was a project I started about 1 year ago (10/20/2019) because I was interested in making a Discord bot for my friends and family Discord server. With the help of some proficient developers from sneaker Twitter, and my own previous knowledge of coding, I scraped together a small little project. Formerly known as FlushedBot, Gambit is an all-in-one Discord bot that can help moderate, manage, and bring fun and useful commands to the servers it joins. 
+> Gambit was a project I started in October of 2019 as I was overcome with an interest to develop Discord bots for my friends and family Discord server. With the help of some proficient developers that am friends with, and my own previous knowledge of coding, I scraped together a small little project. Formerly known as FlushedBot, Gambit is a multi-functional, sneaker-botting oriented Discord bot that can help moderate, manage, entertain, and inform it's users. Providing the cleanest, sleekest, most in-depth, and best developed commands, Gambit is *the* best Discord bot to add into your server! The repo is open to anyone for use, and in the Miscellaneous section of this file is a hyperlink to add this bot into any server!
 
 # <p align=center> Downloading / Installing Gambit 📂
 
@@ -21,46 +21,14 @@
 
 ![Config](https://i.imgur.com/HlmRAgj.png)
 
+---
+
 
 
 # <p align=center>Commands 🎮
-
-### <p align=center> Moderation 👨‍👦‍👦 - Deprecated
- 
-
-* Kick/Ban
-* Mute
-* Channel locking
-* Clearing channels from spam
-* Add and remove role
-* Eval command
-* Bot shutdown command
-
-#### Example: 
-![Mod](https://i.imgur.com/W0GUL2R.png)
-
-___
-
-### <p align=center> Fun 🏒
-* 8-Ball Command
-* Avatar command
-* Blackjack
-* Calculator
-* Coinflip
-* Dog and cat image scraper
-* Dice-roll 
-* Rock Paper Scissors
-* Rating command
-
-#### Example: 
-
-![Fun](https://i.imgur.com/mOyxVNM.png)
-
-___
-
-### <p align=center> Informational 🧠
+### <p align=center> Informational Commands 🧠
 * Catchall Generator.
- * Crypto conversion rates to any currency.
+* Crypto conversion rates to any currency.
 * Finding the conversion rates between cryptocurrencies and regular currencies.
 * A delay calculator for Shopify sites.
 * Gmail dot trick.
@@ -74,13 +42,41 @@ ___
 * Website status checker
 * Checking if the bot is up, and how long it has been up. 
 * Information about the author
-
-#### Example: 
-
-![Info](https://i.imgur.com/WRlexJM.png)
+* Invite Leaderboard
+* Phone Number Generator
+* Quote a User
+* Shopify Site Checker
+* Variant Scraper
+* Website Status Checker
+* Shoe Size Converter
 
 ___
+### <p align=center> Fun Commands 🥳
+* 8-Ball Command
+* Avatar command
+* Blackjack
+* Calculator
+* Coinflip
+* Dog and cat image scraper
+* Dice-roll 
+* Rock Paper Scissors
+* Rating command
+* ISS Info
+* Rate Anything
+___
 
+
+### <p align=center> Moderation Commands 👨‍👦‍👦 - `Deprecated`
+ 
+
+* Kick/Ban
+* Mute
+* Channel locking
+* Clearing channels from spam
+* Add and remove role
+* Eval command
+* Bot shutdown command
+___
 ### <p align=center> NSFW 🔞
 * Self Explanatory...
 ---
