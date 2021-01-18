@@ -2,8 +2,7 @@
 ![Gambit](https://i.imgur.com/KgyyWbS.png)
 
 # <p align=center> Index 🗂
-* (About)[#About-ℹ️]
-* (Downloading / Installing Gambit 📂)[#Downloading-/-Installing-Gambit-📂]
+
 
 # <p align=center>About ℹ️
 
