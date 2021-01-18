@@ -6,7 +6,7 @@ ___
 * [Commands](#commands-)
 	* [Info Commands](#-informational-commands-)
 	* [Fun Commands](#-fun-commands-)
-	* [Mod Commands - `Deprecated`](##-moderation-commands----deprecated)
+	* [Mod Commands - `Deprecated`](#-moderation-commands----deprecated)
 	* [NSFW Commands](#-nsfw-)
 * [Misc.](#miscellaneous-)
 # <p align=center>About ℹ️
