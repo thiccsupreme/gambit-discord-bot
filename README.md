@@ -7,6 +7,7 @@ ___
 * [Downloading / Installation](#-downloading--installing-gambit-)
 * [Commands](#commands-)
 * [Misc.](#miscellaneous-)
+# <p align=center>About ℹ️
 
 > Gambit was a project I started in October of 2019 as I was overcome with an interest to develop Discord bots for my friends and family Discord server. With the help of some proficient developers that am friends with, and my own previous knowledge of coding, I scraped together a small little project. Formerly known as FlushedBot, Gambit is a multi-functional, sneaker-botting oriented Discord bot that can help moderate, manage, entertain, and inform it's users. Providing the cleanest, sleekest, most in-depth, and best developed commands, Gambit is *the* best Discord bot to add into your server! The repo is open to anyone for use, and in the Miscellaneous section of this file is a hyperlink to add this bot into any server!
 
