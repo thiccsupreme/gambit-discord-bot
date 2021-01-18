@@ -1,11 +1,13 @@
-
-
 ![Gambit](https://i.imgur.com/KgyyWbS.png)
 ___
 # <p align=center> Index 🗂
 * [About](#about-)
 * [Downloading / Installation](#-downloading--installing-gambit-)
 * [Commands](#commands-)
+	* [Info Commands](#-informational-commands-)
+	* [Fun Commands](#-fun-commands-)
+	* [Mod Commands - `Deprecated`](##-moderation-commands----deprecated)
+	* [NSFW Commands](#-nsfw-)
 * [Misc.](#miscellaneous-)
 # <p align=center>About ℹ️
 
