@@ -2,35 +2,30 @@ const Discord = require("discord.js");
 
 module.exports = {
     name: "kick",
-    category: "info",
-    description: "kicks the user from the guild",
-    run: (client, message, args) => {
-        if (!message.member.roles.find(r => r.name === "ADMINISTRATOR")) return message.channel.send("You do not have permission to send this command")
+    run: (client, message) => {
+        let member = message.mentions.users.first();
 
-            const user1 = message.mentions.users.first();
-
-            if (user1) {
-                const member = message.guild.member(user1);
-
-                if (member) {
-                    member.kick().then(() => {
-                      const Embed = new Discord.MessageEmbed()
-                          .setColor(0x5126c7)
-                          .setDescription(`Successfully kicked ${user1}`);
-                          message.channel.send(Embed);
-                    }).catch(err => {
-                      const Embed1 = new Discord.MessageEmbed()
-                          .setColor(0x5126c7)
-                          .setDescription(`I was unable to kick the member`);
-                          message.channel.send(Embed1);
-                        console.log(err);
-                    });
-                } else {
-                    message.reply("That user is not in this server")
-                }
+        if (message.member.hasPermission("ADMINISTRATOR")) {
+            if (member) {
+                const memberTarget = message.guild.members.cache.get(member.id);
+                memberTarget.kick();
+                const embed = new Discord.MessageEmbed()
+                    .setTitle("Successfully Kicked the Mentioned User!")
+                    .setColor("GREEN")
+                    .setThumbnail(member.displayAvatarURL())
+                    .addField("Username", memberTarget, true)
+                    .addField("ID", member.id, true)
+                    .setTimestamp()
+                message.channel.send(embed)
             } else {
-                message.reply('Please specify a user');
-
+                const embed1 = new Discord.MessageEmbed()
+                    .setTitle("Error")
+                    .setColor("RED")
+                    .setDescription("Error: Could not kick the mentioned member! Please make sure you have correctly formatted the command!\n\n`.kick <user>`")
+                message.channel.send(embed1)
             }
+        } else {
+            message.channel.send("You do not have the proper permissions to use this command.")
+        }
     }
 }
