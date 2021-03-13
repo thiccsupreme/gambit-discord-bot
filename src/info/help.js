@@ -15,12 +15,42 @@ module.exports = {
             .addField("**Fun Commands**", "🎉", false)
             .addField("**Moderation Commands - `Being Fixed`**", "N/A", false)
             .addField("**NSFW Commands**", "🔞", false)
+            .addField("**BotBroker Command Bots List**", "🤖", false)
+            .addField("**Home**", "🏠", false)
             .setTimestamp()
         message.channel.send(embed0).then(m => {
             m.react("ℹ️")
             m.react("🎉")
             // m.react("📈")
             m.react("🔞")
+            m.react("🤖")
+            m.react("🏠")
+
+
+            const filter0 = (reaction, user) => reaction.emoji.name === "🏠" && user.id === message.author.id;
+            const collector0 = m.createReactionCollector(filter0, { max: 9, time: 5 * 60 * 1000 });
+
+            collector0.on('collect', () => {
+
+                const embed = new Discord.MessageEmbed()
+                    .setTitle("Prefix: `.`")
+                    .setAuthor(`Gambit Help Guide`)
+                    .setColor(0x5126c7)
+                    .setThumbnail(`https://pbs.twimg.com/profile_images/1272524082135916553/JIbe7HpA_400x400.jpg`)
+                    .setDescription(`Hello <@${message.author.id}>, please familiarize yourself with this bot by reading over this embed!\n\n`)
+                    .setImage(`https://pbs.twimg.com/profile_banners/911289505163956225/1592228395/600x200`)
+                    .setFooter("Made by @FootlockerRU")
+                    .addField("**Information Commands**", "ℹ️", false)
+                    .addField("**Fun Commands**", "🎉", false)
+                    .addField("**Moderation Commands - `Being Fixed`**", "N/A", false)
+                    .addField("**NSFW Commands**", "🔞", false)
+                    .addField("**Home**", "🏠", false)
+                    .setTimestamp()
+                m.edit(embed).then(m => {
+                    m.reactions.resolve("🏠").users.remove(message.author.id);
+                })
+            });
+
 
             const filter = (reaction, user) => reaction.emoji.name === "ℹ️" && user.id === message.author.id;
             const collector = m.createReactionCollector(filter, { max: 9, time: 5 * 60 * 1000 });
@@ -44,6 +74,11 @@ module.exports = {
                     .addField("**Member Count**", "`.membercount`")
                     .addField("**Website Status Checker**", "`.status <url>` **(must include `https://` or `http://`)**")
                     .addField("**Invites Leaderboard (Top 5)**", "`.invites`")
+                    .addField("**Quote a User**", "`.quote <channel id> <message id>`")
+                    .addField("**Phone Number Generator**", "`.phone <area code>`")
+                    .addField("**Shopify Variant Scraper**", "`.variant <item url>`")
+                    .addField("**Shopify Site Scraper**", "`.shopify <url>`")
+                    .addField("**Make a Suggestion**", "`.suggest <suggestion>`")
                 m.edit(embed).then(m => {
                     m.reactions.resolve("ℹ️").users.remove(message.author.id);
                 })
@@ -65,11 +100,13 @@ module.exports = {
                     .addField("**Rock Paper Scissors**", "`.rps`")
                     .addField("**Blackjack**", "`.blackjack`")
                     .addField("**Rate Anything**", "`.rate <anything>`")
+                    .addField("**ISS Information**", "`.iss`")
+                    .addField("**Minecraft Server Info**", "`.mcserver <ip> <port>`")
                 m.edit(embed1).then(m => {
                     m.reactions.resolve("🎉").users.remove(message.author.id);
                 })
             });
-            
+
             // const filter2 = (reaction, user) => reaction.emoji.name === "📈" && user.id === message.author.id;
             // const collector2 = m.createReactionCollector(filter2, { max: 9, time: 5 * 60 * 1000 });
 
@@ -93,7 +130,7 @@ module.exports = {
             // });
             const filter3 = (reaction, user) => reaction.emoji.name === "🔞" && user.id === message.author.id;
             const collector3 = m.createReactionCollector(filter3, { max: 9, time: 5 * 60 * 1000 });
-            
+
             collector3.on('collect', () => {
 
                 const embed3 = new Discord.MessageEmbed()
@@ -107,6 +144,20 @@ module.exports = {
                     .addField("**Thighs**", "`.thighs`")
                 m.edit(embed3).then(m => {
                     m.reactions.resolve("🔞").users.remove(message.author.id);
+                })
+            });
+            const filter4 = (reaction, user) => reaction.emoji.name === "🤖" && user.id === message.author.id;
+            const collector4 = m.createReactionCollector(filter4, { max: 9, time: 5 * 60 * 1000 });
+
+            collector4.on('collect', () => {
+
+                const embed4 = new Discord.MessageEmbed()
+                    .setColor(0x5126c7)
+                    .setThumbnail("https://pbs.twimg.com/profile_images/1300549817622581249/rBc7UWcf_400x400.jpg")
+                    .setTitle("Command: .botbroker <bot>")
+                    .setDescription("List of bots:\n `-Cybersole\n-MekAIO\n-Nebula\n-ScottBot\n-WrathAIO\n-SoleAIO\n-Adept\n-MekPreme\n-SwftAIO\n-PolarisAIO\n-TohruAIO\n-Splashforce\n-PrismAIO\n-Balko\n-Project Destroyer\n-Dashe\n-Phantom\n-Dragon`")
+                m.edit(embed4).then(m => {
+                    m.reactions.resolve("🤖").users.remove(message.author.id);
                 })
             });
         })
