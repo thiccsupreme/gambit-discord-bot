@@ -13,6 +13,6 @@ module.exports = {
                 .addField('**__MRKT__**', "[Discord Link](https://discord.gg/vsGne7g) | [Twitter](https://twitter.com/OfficialMRKT)")
                 .setTimestamp()
                 .setFooter("Made by @FootlockerRU")
-            message.channel.sendEmbed(Embed2); 
+            message.channel.send(Embed2); 
         }
     }
