@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const cc = require("cryptocompare");
 global.fetch = require('node-fetch');
+const fs = require("fs");
 
 
 const config = fs.readFileSync('config.json');
@@ -18,7 +19,7 @@ module.exports = {
         if (!args[0] || !args[1]) {
             const embed = new Discord.MessageEmbed()
                 .setTitle("ERROR")
-                .setDescription("**Usage: ?crypto <crypto currency> <currency of choice>**")
+                .setDescription("**Usage: .crypto <crypto currency> <currency of choice>**")
                 .setColor("RED")
                 .setFooter("Made by @FootlockerRU")
                 .setTimestamp()
@@ -35,13 +36,11 @@ module.exports = {
                         .setThumbnail(`https://www.cryptocompare.com${data.IMAGEURL.toString()}`, true)
                         .addField('Current Price', data.PRICE.toString(), true)
                         .addField('24 Hour Change', data.CHANGE24HOUR.toFixed(2).toString(), true)
-                        .addField("% Change over the previous 24hr", `%${data.CHANGEPCT24HOUR.toFixed(2).toString()}`, false)
+                        .addField("% Change over the previous 24hr", `${data.CHANGEPCT24HOUR.toFixed(2).toString()}%`, false)
                         .addField("Hour Low", data.LOWHOUR.toString(), true)
                         .addField("Hour High", data.HIGHHOUR.toString(), true)
-                        .addBlankField(true)
                         .addField("Daily Low", data.LOWDAY.toString(), true)
                         .addField("Daily High", data.HIGHDAY.toString(), true)
-                        .addBlankField(true)
                         .setTimestamp()
                         .setFooter("Made by @FootlockerRU")
                         msg.channel.send(embed1);
