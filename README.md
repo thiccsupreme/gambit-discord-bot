@@ -85,9 +85,7 @@ ___
 * Eval command
 * Bot shutdown command
 ___
-### <p align=center> NSFW 🔞
-* Self Explanatory...
----
+
 # <p align=center>Miscellaneous 🚀
  
 * Not all commands may be fully functional as they may have deprecated code, bad API's, etc. Please open up an issue if any of the commands don't result in the bot responding, or contact me directly. My information is in the footer of this `README` file.  
